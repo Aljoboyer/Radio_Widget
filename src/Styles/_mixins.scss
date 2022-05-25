@@ -1,0 +1,6 @@
+@mixin DisplayType ($direction, $JC, $AI) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $JC;
+    align-items: $AI;
+}

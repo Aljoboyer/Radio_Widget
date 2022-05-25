@@ -1,0 +1,139 @@
+body {
+  background: #070724;
+}
+
+body .radio_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+body .radio_container .station_list {
+  width: 400px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-box-shadow: rgba(59, 59, 59, 0.59) 0px 5px 15px;
+          box-shadow: rgba(59, 59, 59, 0.59) 0px 5px 15px;
+}
+
+body .radio_container .station_list .channel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 15px 0px 15px;
+  cursor: pointer;
+}
+
+body .radio_container .station_list .channel:hover {
+  background-color: #14144f8d;
+}
+
+body .radio_container .station_list .channel_text {
+  color: #bab9b9;
+}
+
+.station_list_header {
+  background-color: #ff9900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 0px 17px 0px 17px;
+}
+
+.station_list_header .station_title {
+  color: white;
+  font-size: 22px;
+}
+
+.station_list_header .station_list_headerImg {
+  width: 35px;
+  height: 35px;
+}
+
+.horizontal_line {
+  color: #bab9b9;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.station_list_footer {
+  text-align: center;
+  transition: -webkit-transform 0.55s linear;
+}
+
+.station_list_footer .footer_small_text {
+  color: #ff9900;
+  font-size: 14px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.station_list_footer .footer_channel_name {
+  color: #bab9b9;
+  font-size: 18px;
+}
+
+.play_station {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  -webkit-transition: opacity 1ms linear 1s;
+  transition: opacity 1ms linear 1s;
+}
+
+.play_station .play_station_img {
+  width: 150px;
+  padding: 10px 20px 10px 20px;
+}
+
+.play_station .play_station_icons {
+  width: 40px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=RadioStyle.css.map */

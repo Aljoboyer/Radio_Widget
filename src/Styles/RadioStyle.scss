@@ -1,0 +1,79 @@
+@import './variables';
+@import './mixins';
+
+body {
+    background: #070724;
+    .radio_container{
+        @include DisplayType(column, center, center);
+        height: 100vh;
+        padding-top: 50px;
+        .station_list{
+            width: 400px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            box-shadow: rgba(59, 59, 59, 0.59) 0px 5px 15px;
+            .channel{
+                @include DisplayType(row, space-between, center);
+                padding: 0px 15px 0px 15px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #14144f8d;
+                }
+            }
+            .channel_text{
+                color: $TextColor;
+            }
+      
+        }
+    }
+}
+.station_list_header{ 
+    background-color: $HeaderColor;
+    @include DisplayType(row, space-between, center);
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 0px 17px 0px 17px;
+    .station_title{
+        color: white;
+        font-size: 22px;
+    }
+    .station_list_headerImg{
+        width: 35px;
+        height: 35px; 
+    }
+}
+
+.horizontal_line{
+    color: $TextColor;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.station_list_footer{
+    text-align: center;
+    transition: -webkit-transform 0.55s linear;
+    .footer_small_text{
+        color: $HeaderColor;
+        font-size: 14px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .footer_channel_name{
+        color:  $TextColor;
+        font-size: 18px;
+    }
+}
+
+.play_station{
+    @include DisplayType(row, center, center);
+    opacity: 1;
+    transition: opacity 1ms linear 1s; 
+    .play_station_img{
+        width: 150px;
+        padding: 10px 20px 10px 20px ;
+    }
+    .play_station_icons{
+        width: 40px;
+        cursor: pointer;
+    }
+}
